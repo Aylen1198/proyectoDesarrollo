@@ -1,0 +1,224 @@
+header {
+    background-color: #ffb627;
+    color: #8c1c13;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 1px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.imagenLogo {
+    width: 100px;
+}
+.headerDiv{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    margin: 5px;
+}
+a {
+    text-decoration: none;
+    color: #8c1c13;
+}
+
+
+
+
+main{
+    background-color: #f3de2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.destacados{
+    display: flex;
+    width: 90%;
+}
+.destacadosCaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #8c1c13;
+    border-radius: 15px;
+    background-color: #f6bd60;
+    margin: 15px;
+    padding: 7px 0;
+}
+.destacadosCaja img{
+    border: 1px solid #8c1c13;
+    width: 95%;
+    border-radius: 14px;
+}
+.destacadosCaja div {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.destacadosP{
+    background-color: #e9ff70;
+    width: 70%;
+    border: 1px solid #8c1c13;
+    border-radius: 14px;
+    padding: 5px;
+}
+.botonInfo{
+    width: 15%;
+    height: 20%;
+    border: 1px solid #8c1c13;
+    border-radius: 14px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
+.nosotrosContenido {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-between;
+}
+.nosotrosContenido div{
+    width: 35%;
+}
+.nosotrosDatos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nosotrosDatos ul {
+    flex-direction: column;
+    align-items: flex-end;
+}
+.nosotrosContacto{
+    padding-bottom: 70px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-between;
+}
+.productosNav{
+    width: 60%;
+}
+.productosImagenes {
+    width: 30%;
+}
+.productos form{
+    width: 30%;
+}
+
+
+
+
+
+.frecuentesPadre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.frecuentesNav{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.frecuentesNav ul{
+    width: 70%;
+    flex-direction: column;
+}
+.frecuentesNav ul li{
+    border: 2px solid #8c1c13;
+    border-radius: 7px;
+    width: 90%;
+    padding: 5px 20px;
+    text-align: center;
+    
+}
+.frecuentesRta{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.frecuentesRta li {
+    width: 70%;
+}
+
+
+.contactoFormulario{
+    padding-bottom: 70px;
+}
+
+.opinionesNav{
+    display: flex;
+    width: 80%;
+}
+.opinionesCaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #8c1c13;
+    border-radius: 15px;
+    background-color: #f6bd60;
+    margin: 15px;
+    padding: 7px 0;
+
+}
+.opinionesCajaInterior{
+    display: flex;
+    padding: 0 7px;
+    justify-content: space-between;
+    align-items: center;
+}
+.opinionesCajaInterior p{
+    font-size: 13px;
+    background-color: #e9ff70;
+    width: 60%;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #8c1c13;
+    border-radius: 14px;
+    padding: 5px;
+}
+.opinionesCajaInterior a{
+    width: 15%;
+    height: 20%;
+    border: 1px solid #8c1c13;
+    border-radius: 14px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.opinionesCaja img{
+    border: 1px solid #8c1c13;
+    width: 95%;
+    border-radius: 14px;
+}
+
