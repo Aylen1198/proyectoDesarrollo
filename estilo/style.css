@@ -8,8 +8,21 @@ header {
     position: sticky;
     top: 1px;
 }
+
+.bg-body-tertiary {
+    background-color: transparent !important;
+}
+.offcanvas{
+    background-color: #ffc107;
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+    --bs-dropdown-link-hover-bg: #b58904;
+    --bs-dropdown-link-active-bg: #8c5613d9
+}
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 .imagenLogo {
     width: 100px;
@@ -41,6 +54,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
 }
 h2{
     font-weight: bold;
@@ -50,43 +64,20 @@ h2{
 .destacados{
     display: flex;
     width: 90%;
+    justify-content: space-evenly;
 }
-.destacadosCaja{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #8c1c13;
-    border-radius: 15px;
+.card{
+    position: inherit;
+    width: 18rem;
     background-color: #f6bd60;
-    margin: 15px;
-    padding: 7px 0;
+    border: solid .1rem #8c1c13;
+    border-radius: 1rem;
+    margin: 1rem;
 }
-.destacadosCaja img{
-    border: 1px solid #8c1c13;
-    width: 95%;
-    border-radius: 14px;
-}
-.destacadosCaja div {
-    display: flex;
-    width: 95%;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.destacadosP{
-    background-color: #e9ff70;
-    width: 70%;
-    border: 1px solid #8c1c13;
-    border-radius: 14px;
-    padding: 5px;
-}
-.botonInfo{
-    width: 15%;
-    height: 20%;
-    border: 1px solid #8c1c13;
-    border-radius: 14px;
-    padding: 5px;
-    text-align: center;
+.card img {
+    margin: .5rem;
+    border: solid .1rem #8c1c13;
+    border-radius: 1rem;
 }
 
 
@@ -130,8 +121,8 @@ h2{
 .productosImagenes {
     width: 30%;
 }
-.productos form{
-    width: 30%;
+legend{
+    font-size: 1rem;
 }
 
 
@@ -146,7 +137,7 @@ h2{
 .frecuentesNav{
     display: flex;
     justify-content: center;
-    width: 40%;
+    
 }
 .frecuentesNav ul{
     width: 70%;
@@ -171,7 +162,29 @@ h2{
 
 
 .contactoFormulario{
-    padding-bottom: 70px;
+    width: 60%;
+    padding: 3rem 9rem;
+}
+*, ::after, ::before{
+    box-sizing: content-box;
+}
+.mb-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mb-3 div{
+    width: 45%;
+}
+.contenedorEnviarForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+.botonFormulario{
+    border-radius: 5px;
+    border: transparent;
 }
 
 .opinionesNav{
@@ -222,3 +235,54 @@ h2{
     border-radius: 14px;
 }
 
+
+
+
+
+
+@media (max-width: 750px){
+    .contactoFormulario{
+        width: 90%;
+        
+    }
+    .mb-3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mb-3 div {
+        width: 90%;
+    }
+    .form-floating {
+        margin: 5px 0;
+    }
+    .destacados{
+        flex-direction: column;
+        align-items: center;
+    }
+    .frecuentesPadre{
+        flex-direction: column;
+    }
+    .frecuentesRta{
+        width: auto;
+    }
+    .nosotrosContenido{
+        flex-direction: column;
+    }
+    .nosotrosContenido div{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotrosDatos{
+        align-items: center;
+    }
+    .nosotrosContacto{
+        width: 80%;
+        text-align: center;
+    }
+    .productos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
