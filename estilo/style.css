@@ -73,6 +73,15 @@ h2{
     border: solid .1rem #8c1c13;
     border-radius: 1rem;
     margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #8c1c13;
+    border-radius: 15px;
+    background-color: #f6bd60;
+    margin: 15px;
+    padding: 7px 0;
 }
 .card img {
     margin: .5rem;
@@ -164,6 +173,9 @@ legend{
 .contactoFormulario{
     width: 60%;
     padding: 3rem 9rem;
+}
+.offcanvas-backdrop{
+    position: relative;
 }
 *, ::after, ::before{
     box-sizing: content-box;
